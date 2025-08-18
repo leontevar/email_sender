@@ -2,13 +2,15 @@ import smtplib
 from email.mime.text import MIMEText
 from getpass import getpass
 
+default_smtpserver = 'smtp.gmail.com'
+default_smtpport = '587'
 
 fromsender = input("'From:' field. Place text like alexander@mail.com: ")
 addressee = input("'To:' field. Place text like gigomegoom@mail.com: ")
 subject = input("'Subject:' field. Place any text: ")
 messagebody = input("Message body filed. Place any text: ")
-SMTPserver = input("smtp-server dns-name. Place MX-record domain name : ")
-Port = int(input("smtp-server port field. Place port here (usually is 587): "))
+SMTPserver = input("smtp-server dns-name. Place MX-record domain name. If you just hint Enter here  I will use {default_smtpserver}. ") or default_smtpserver
+Port = int(input("smtp-server port field. Place port here. If you just hint Enter here  I will use default port {default_smtpport}): ")) or default_smtpport
 loginsmtp = input("smtp-server login: ")
 passwordsmtp = getpass("smtp-server  password: ")
 
