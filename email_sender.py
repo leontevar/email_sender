@@ -68,13 +68,13 @@ else:
 
 
 
-msg = MIMEText(args.messagebody)
-msg['Subject'] = args.subject
-msg['From'] = args.fromsender
-msg['To'] = args.addressee
-server = smtplib.SMTP(args.SMTPserver, args.Port)
+msg = MIMEText(messagebody)
+msg['Subject'] = subject
+msg['From'] = fromsender
+msg['To'] = addressee
+server = smtplib.SMTP(SMTPserver, Port)
 server.starttls()
-server.login(args.loginsmtp,args.passwordsmtp)
-server.sendmail(args.fromsender, args.addressee, msg.as_string())
+server.login(loginsmtp,passwordsmtp)
+server.sendmail(fromsender, addressee, msg.as_string())
 server.quit()
 print("E-mail sent")
