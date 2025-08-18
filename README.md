@@ -5,7 +5,7 @@ This is an Utility to send email from linux servers. This one is needed because 
 It works!
 to use Gmail you should create an "App Passwords" in your google-account settings (you can not use your gmail password, you will receive 'new' password for your gmail account in the "App Passwords" google-account settings )
 
-email_sender.py  utility able to accept such CLI  keys (utility will ask in interactive mode if required parameters are not set)^
+email_sender.py  utility able to accept such CLI  keys (utility will ask in interactive mode if required parameters are not set):  
 -f (or --fromsender) asks to fill 'From:' field.  
 -a (or --addressee) asks to fill  'To:' field.  
 -s (or --subject) asks to fill  'Subject:' field.  
