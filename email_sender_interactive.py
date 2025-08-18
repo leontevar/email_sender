@@ -1,6 +1,6 @@
 import smtplib
 from email.mime.text import MIMEText
-
+from getpass import getpass
 
 
 fromsender = input("'From:' field. Place text like alexander@mail.com: ")
@@ -10,7 +10,7 @@ messagebody = input("Message body filed. Place any text: ")
 SMTPserver = input("smtp-server dns-name. Place MX-record domain name : ")
 Port = int(input("smtp-server port field. Place port here (usually is 587): "))
 loginsmtp = input("smtp-server login: ")
-passwordsmtp = input("smtp-server  password: ")
+passwordsmtp = getpass("smtp-server  password: ")
 
 msg = MIMEText(messagebody)
 msg['Subject'] = subject
