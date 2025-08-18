@@ -4,3 +4,8 @@ This is an Utility to send email from linux servers. This one is needed because 
 
 It works!
 to use Gmail you should create an "App Passwords"
+
+Usage:
+```
+# python3 email_sender_interactive.py
+```
