@@ -19,10 +19,11 @@ parser.add_argument("-p", "--passwordsmtp", nargs='?')
 
 args = parser.parse_args()
 
-if args.XX is None:
-    XX =
-else:
-    XX = args.XX
+#template for me
+#if args.XX is None:
+#    XX =
+#else:
+#    XX = args.XX
 
 if args.fromsender is None:
     fromsender = input("'From:' field. Place text like alexander@mail.com: ")
