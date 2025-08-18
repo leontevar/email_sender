@@ -24,7 +24,7 @@ OR (You will be asked for a password)
 # python3 email_sender_cli.py -s emailsubject -m bodymessage -f youremail@gmail.com -a addressee-email@gmail.com -S smtp.gmail.com -P 587 -l youremail@gmail.com 
 
 ```
-OR (You will be asked for a email subject, email body, and a password)
+OR (You will be asked for an email subject, email body, and a password)
 ```
 # python3 email_sender_cli.py -f youremail@gmail.com -a addressee-email@gmail.com -S smtp.gmail.com -P 587 -l youremail@gmail.com -p "yourpasswordhere"
 ```
