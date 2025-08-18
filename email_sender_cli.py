@@ -5,14 +5,14 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-s", "--subject". nargs='?', default="defaultvalue")
-parser.add_argument("-m", "--messagebody". nargs='?', default="defaultvalue")
-parser.add_argument("-f", "--fromsender". nargs='?', default="defaultvalue")
-parser.add_argument("-a", "--addressee". nargs='?', default="defaultvalue")
-parser.add_argument("-S", "--SMTPserver". nargs='?', default="defaultvalue")
-parser.add_argument("-P", "--Port". nargs='?', default="defaultvalue")
-parser.add_argument("-l", "--loginsmtp". nargs='?', default="defaultvalue")
-parser.add_argument("-p", "--passwordsmtp". nargs='?', default="defaultvalue")
+parser.add_argument("-s", "--subject", nargs='?', default="defaultvalue")
+parser.add_argument("-m", "--messagebody", nargs='?', default="defaultvalue")
+parser.add_argument("-f", "--fromsender", nargs='?', default="defaultvalue")
+parser.add_argument("-a", "--addressee", nargs='?', default="defaultvalue")
+parser.add_argument("-S", "--SMTPserver", nargs='?', default="defaultvalue")
+parser.add_argument("-P", "--Port", nargs='?', default="defaultvalue")
+parser.add_argument("-l", "--loginsmtp", nargs='?', default="defaultvalue")
+parser.add_argument("-p", "--passwordsmtp", nargs='?', default="defaultvalue")
 
 
 args = parser.parse_args()
