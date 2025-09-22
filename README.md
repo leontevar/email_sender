@@ -57,7 +57,7 @@ loginsmtp = youremail@gmail.com
 passwordsmtp = yourpassword
 ```
 
-Usage of bsd-mailx_like cli-version bsd-mailx-replace.py:
+Usage of bsd-mailx-replace.py is similar to the  /usr/bin/bsd-mailx:
 ```
 mkdir /opt/mailsender/
 vi /opt/mailsender/variables.ini
